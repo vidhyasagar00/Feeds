@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.firebase)
 }
 
 android {
@@ -88,6 +89,9 @@ dependencies {
 
     // coil
     implementation(libs.coil.kt.coil.compose)
+
+    //firebase
+    implementation(platform(libs.firebase.bom))
 
     testImplementation(libs.junit)
 
